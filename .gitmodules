@@ -1,0 +1,9 @@
+[submodule "admin"]
+	path = admin
+	url = git@github.com:tarex/marvel-admin.git
+[submodule "shop"]
+	path = shop
+	url = git@github.com:tarex/pixer.git
+[submodule "pixer-api"]
+	path = pixer-api
+	url = git@github.com:RedQ/redq-marvel-mock-api-rest.git

@@ -1,0 +1,24 @@
+{
+  "name": "pixer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "RedQ, Inc.",
+  "workspaces": [
+    "admin/*",
+    "shop"
+  ],
+  "scripts": {
+    "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache}\" && rimraf node_modules",
+    "dev:shop-rest": "yarn workspace @pixer/shop dev:rest",
+    "build:shop-rest": "yarn workspace @pixer/shop build:rest",
+    "start:shop-rest": "yarn workspace @pixer/shop start",
+    "dev:admin-rest": "yarn workspace @marvel/admin-rest dev",
+    "build:admin-rest": "yarn workspace @marvel/admin-rest build",
+    "start:admin-rest": "yarn workspace @marvel/admin-rest start"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.0",
+    "rimraf": "^3.0.2"
+  }
+}
