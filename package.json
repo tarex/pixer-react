@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache}\" && rimraf node_modules",
-    "dev:shop-rest": "yarn workspace @pixer/shop dev:rest",
-    "build:shop-rest": "yarn workspace @pixer/shop build:rest",
+    "dev:shop-rest": "yarn workspace @pixer/shop dev",
+    "build:shop-rest": "yarn workspace @pixer/shop build",
     "start:shop-rest": "yarn workspace @pixer/shop start",
     "dev:admin-rest": "yarn workspace @marvel/admin-rest dev",
     "build:admin-rest": "yarn workspace @marvel/admin-rest build",
